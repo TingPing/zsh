@@ -18,3 +18,5 @@ alias ase='cower -s'
 alias ainf='cower -i -i'
 alias ain='cower -d'
 alias aup='cower -u'
+
+alias bup='burp' # just cuz =)
