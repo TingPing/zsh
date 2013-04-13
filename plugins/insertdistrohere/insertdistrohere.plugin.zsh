@@ -1,7 +1,7 @@
 # Auto-loads proper distro plugin
 
 if [ -f /etc/redhat-release ]; then
-	antigen-bundle yum
+	antigen-bundle TingPing/zsh plugins/fedora
 elif [ -f /etc/debian_version ]; then
 	antigen-bundle debian
 elif [ -f /etc/arch-release ]; then
