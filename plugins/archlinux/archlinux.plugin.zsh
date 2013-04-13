@@ -19,4 +19,10 @@ alias ainf='cower -i -i'
 alias ain='cower -d'
 alias aup='cower -u'
 
+alias mpi='makepkg -sif'
+alias mps='makepkg -Sf'
+alias mpg='makepkg -g'
+alias mpd='makepkg -o'
+alias mpb='makepkg -e'
+
 alias bup='burp' # just cuz =)
