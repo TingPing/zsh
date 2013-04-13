@@ -5,7 +5,7 @@ if [ -f /etc/redhat-release ]; then
 elif [ -f /etc/debian_version ]; then
 	antigen-bundle debian
 elif [ -f /etc/arch-release ]; then
-	antigen-bundle archlinux
+	antigen-bundle TingPing/zsh plugins/archlinux
 elif [ -f /etc/SuSE-release ]; then
 	antigen-bundle suse
 fi
