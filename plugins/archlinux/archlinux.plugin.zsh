@@ -11,7 +11,7 @@ alias plse='pacman -Qs'
 alias plsor='sudo pacman -Qdt'
 alias prmor='sudo pacman -Rs $(pacman -Qtdq)'
 
-alias ppro='pkgfile'
+alias ppro='pkgfile -di'
 alias pls='pkgfile -l'
 
 alias ase='cower -s'
