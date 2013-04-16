@@ -15,8 +15,8 @@ alias ppro='pkgfile -di'
 alias pls='pkgfile -l'
 
 alias ase='cower -s'
-alias ainf='cower -i -i'
-alias ain='cower -d'
+alias ainf='cower -ii'
+alias ain='cower -dd'
 alias aup='cower -u'
 
 alias mpi='makepkg -sif'
