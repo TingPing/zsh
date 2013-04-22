@@ -17,15 +17,21 @@ autoload -U compinit && compinit
 autoload -U promptinit && promptinit
 autoload -U colors && colors
 
+export PATH="$PATH:$HOME/.gem/ruby/2.0.0/bin"
 export EDITOR="ne"
 # export VISUAL="gedit"
 export PAGER="most"
 export TERM="gnome"
 export BROWSER="chromium"
 
-unsetopt correctall
 setopt hist_ignore_dups
-setopt autocd
-setopt appendhistory
+setopt hist_ignore_space
+setopt inc_append_history
+setopt share_history
+setopt auto_cd
+setopt auto_resume
+setopt extended_glob
 setopt notify
 setopt nomatch
+setopt check_jobs
+unsetopt correct_all
