@@ -4,6 +4,8 @@ SAVEHIST=500
 
 source ~/.antigen.zsh
 antigen-use oh-my-zsh
+antigen-bundle extract
+antigen-bundle gem
 antigen-bundle git
 antigen-bundle git-extras
 antigen-bundle systemd
@@ -29,9 +31,10 @@ setopt hist_ignore_space
 setopt inc_append_history
 setopt share_history
 setopt auto_cd
+setopt auto_continue
 setopt auto_resume
 setopt extended_glob
 setopt notify
 setopt nomatch
+setopt nocorrect
 setopt check_jobs
-unsetopt correct_all
