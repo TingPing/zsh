@@ -1,15 +1,18 @@
 # Fedora zsh aliases and functions
 
-alias yse="yum search"
-alias ypro="yum provides"
-alias yinf="yum info"
-alias ygl="yum grouplist"
-alias yup="sudo yum update"
-alias yin="sudo yum install"
-alias ylin="sudo yum localinstall"
-alias ygin="sudo yum groupinstall"
-alias yrm="sudo yum remove"
-alias ygrm="sudo yum groupremove"
+if [ -f /usr/bin/dnf ];then
+PKGMGR=dnf
+else
+PKGMGR=yum
+fi
+
+alias yse="$PKGMGR search"
+alias ypro="$PKGMGR provides"
+alias yinf="$PKGMGR info"
+alias ygl="$PKGMGR list"
+alias yup="sudo $PKGMGR update"
+alias yin="sudo $PKGMGR install"
+alias yrm="sudo $PKGMGR erase"
 
 # yum-utils
 alias ybd="sudo yum-builddep"
