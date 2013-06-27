@@ -38,3 +38,5 @@ setopt notify
 setopt nomatch
 setopt nocorrect
 setopt check_jobs
+
+unsetopt correct_all
