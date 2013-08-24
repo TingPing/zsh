@@ -24,7 +24,7 @@ export EDITOR="ne"
 # export VISUAL="gedit"
 export PAGER="most"
 export TERM="gnome"
-export BROWSER="chromium"
+export BROWSER="firefox"
 
 setopt hist_ignore_dups
 setopt hist_ignore_space
