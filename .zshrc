@@ -20,9 +20,15 @@ autoload -U promptinit && promptinit
 autoload -U colors && colors
 
 export PATH="$PATH:$HOME/.local/bin/:$HOME/.gem/ruby/2.0.0/bin"
+if [ -f /usr/bin/ne ];then
 export EDITOR="ne"
+else
+export EDITOR="nano"
+fi
 # export VISUAL="gedit"
+if [ -f /usr/bin/most ];then
 export PAGER="most"
+fi
 export TERM="gnome"
 export BROWSER="firefox"
 
